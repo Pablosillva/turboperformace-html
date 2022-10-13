@@ -285,6 +285,11 @@ h6 {
 .area-footer .paixao {
     line-height: 25px;
 }
+.copyright {
+    background-color: rgba(0, 0, 0, 0.925);
+    color: #fff;
+    text-align: center;
+}
 
 
 @media (max-width: 600px) {
