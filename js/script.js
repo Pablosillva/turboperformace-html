@@ -1,8 +1,5 @@
-const btnMobile = document.getElementById('btn-mobile');
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
 
-function toggleMenu() {
-    const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
-}
-
-btnMobile.addEventListener('click', toggleMenu);
+hamburger.addEventListener("click", ()=>
+nav.classList.toggle("active"));
