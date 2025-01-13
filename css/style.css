@@ -517,9 +517,14 @@ a {
     .bem-vindos-mbl {
         display: block;
     }
-
+    
+    .bem-vindos-escrita {
+        height: 100%;
+    }
+    
     .bem-vindos-imagem img {
-        width: 25%;
+        /* width: 25%; */
+        display: none;
     }
 }
 
