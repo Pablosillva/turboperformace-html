@@ -82,7 +82,7 @@ a:hover {
 .fundo {
     display: flex;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.596)), url(../imagens/fundo.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.719)), url(../imagens/fundo.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
