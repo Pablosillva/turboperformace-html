@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Quicksand:wght@300;500&display=swap');
 
 :root {
-    --font: 
+    --font:
 }
 
 * {
@@ -13,34 +13,61 @@
     text-decoration: none;
 }
 
-ul {
-    margin: 0px;
-    padding: 0px;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    height: 10vh;
-    
-    
-}
 .container {
     display: flex;
     justify-content: space-between;
     width: 1000px;
 }
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    height: 10vh; */
+    background: #000;
+    padding-inline: 16px;
+
+
+}
+
+.nav {
+    /* max-width: 1280px; */
+    height: 70px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-list a {
+    font-size: 18px;
+    padding-block: 16px;
+}
+
 .flex {
     flex-direction: column;
     justify-content: center;
 }
+
 a {
-    color: rgb(250, 210, 1);
+    color: #fad201;
     font-family: Arial, Helvetica, sans-serif;
 }
-a:hover{
+
+a:hover {
     background: rgba(250, 208, 1, .07);
 }
 
@@ -51,6 +78,7 @@ a:hover{
 #logo {
     width: 130px;
 }
+
 .fundo {
     display: flex;
     justify-content: center;
@@ -60,9 +88,30 @@ a:hover{
     background-attachment: fixed;
     height: 90vh;
 }
+
 .titulo {
     text-align: center;
     text-shadow: .1em .1em 1em black;
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: #333;
+    border-top: 3px solid #fad201;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fad201;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.5s;
 }
 
 #menu {
@@ -70,10 +119,11 @@ a:hover{
     list-style: none;
     gap: 2rem;
 }
-nav {
+
+/* nav {
     display: flex;
     align-items: center;
-}
+} */
 
 #btn-mobile {
     display: none;
@@ -87,18 +137,20 @@ nav {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 39px;
-    
+
 }
-#ctt:hover{
+
+#ctt:hover {
     background-color: rgba(250, 208, 1, 0.7);
 }
 
 h1 {
     font-family: Fugaz One, Arial, sans-serif;
     font-size: 50px;
-    color: white;   
-    
+    color: white;
+
 }
+
 h2 {
     color: #fad201;
     font-family: 'Quicksand', sans-serif;
@@ -129,6 +181,7 @@ h2 {
     background-size: cover;
     height: 100vh;
 }
+
 .bem-vindos-box {
     width: 500px;
     padding: 30px;
@@ -148,20 +201,24 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
+
 .bem-vindos-imagem img {
     width: 70%;
 }
+
 .sessao02imagem img {
     padding: 20px;
 }
+
 .texto-bv {
     font-family: "Quicksand";
     font-weight: 500;
     font-size: 25px;
     color: black;
 }
+
 h3 {
     color: #fad201;
     margin-bottom: 10px;
@@ -178,6 +235,7 @@ h4 {
 p {
     font-size: 15px;
 }
+
 .button {
     background-color: #780116;
     color: white;
@@ -189,18 +247,20 @@ p {
     padding-bottom: 15px;
     padding-left: 38px;
     padding-right: 38px;
-    
-}    
+
+}
+
 .button:hover {
     background-color: #41010b;
     color: white;
-}  
+}
+
 h5 {
     font-weight: 500;
     font-family: "Fugaz One";
     font-size: 30px;
     color: #fad201;
-}  
+}
 
 
 /*          Fim Seção de Bem-vindos            */
@@ -213,7 +273,7 @@ h5 {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/fundo-servicos.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 1100px;
 }
 
 #titulo h3 {
@@ -221,6 +281,7 @@ h5 {
     text-align: center;
     font-size: 50px;
 }
+
 .box {
     flex: 1;
     display: flex;
@@ -228,18 +289,21 @@ h5 {
     flex-wrap: wrap;
     padding: 30px;
 }
+
 .service-box {
     flex: 1;
     width: 250px;
     padding: 30px;
     font-family: "Quicksand";
 }
+
 .service-box p {
     color: white;
     line-height: 22px;
     width: 200px;
-    
+
 }
+
 .img-serv img {
     width: 200px;
     border-radius: 40px;
@@ -256,14 +320,16 @@ h5 {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    
+
 }
+
 .clientes {
     display: flex;
     justify-content: center;
     padding: 20px;
     height: 100vh;
 }
+
 .cliente {
     display: flex;
     width: 50%;
@@ -271,6 +337,7 @@ h5 {
     align-items: center;
     justify-content: center;
 }
+
 .cliente h3 {
     text-align: center;
     display: flex;
@@ -278,6 +345,7 @@ h5 {
     font-size: 50px;
 
 }
+
 .depoimento {
     width: 50%;
     padding: 20px;
@@ -285,6 +353,7 @@ h5 {
     flex-direction: column;
     text-align: center;
 }
+
 .depoimento img {
     width: 50px;
     border-radius: 50%;
@@ -300,30 +369,40 @@ footer {
     justify-content: center;
     background-color: #000;
 }
+
 h6 {
     font-weight: 500;
     font-family: "Fugaz One";
     font-size: 20px;
     color: #fad201;
 }
+
 .footer-area {
     display: flex;
     flex: 1;
 }
+
 .area-footer {
     flex: 1;
 }
+
 .area-footer img {
     width: 200px;
 }
-.area-footer, ul, li, a {
+
+.area-footer,
+ul,
+li,
+a {
     list-style: none;
     text-decoration: none;
     padding: 5px;
 }
+
 .area-footer .paixao {
     line-height: 25px;
 }
+
 .copyright {
     background-color: rgba(0, 0, 0, 0.925);
     color: #fff;
@@ -352,32 +431,115 @@ h6 {
     #btn-mobile {
         display: block;
     }
-    #menu {
-        display: none;
+
+    .hamburger {
+        display: block;
+        z-index: 1;
     }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #000;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.20s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.30s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.40s;
+    }
+
+    .nav-list li:nth-child(4) a {
+        transition: 0.5s 0.50s;
+    }
+
+    .nav-list li:nth-child(5) a {
+        transition: 0.5s 0.60s;
+    }
+
+    /* Estilos ativos */
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(230deg);
+    }
+    .nav.active .hamburger::after {
+        transform: rotate(-230deg);
+        top: -8px;
+    }
+    
+    
     #nav.active #menu {
         display: flex;
     }
+
     .bem-vindos-box {
         padding: 50px;
         width: auto;
     }
+
     .bem-vindos-mbl {
         display: block;
     }
+
     .bem-vindos-imagem img {
-        width: 30%;
+        width: 25%;
     }
 }
 
 @media (max-width:600px) {
+
+    .bem-vindos-imagem img {
+        display: none;
+    }
+    
     .footer-area {
         display: flex;
         flex: 1;
         flex-direction: column;
         align-items: center;
     }
-    .area-footer, ul, li, a {
+
+    .area-footer,
+    ul,
+    li,
+    a {
         text-align: center;
         list-style: none;
         text-decoration: none;
